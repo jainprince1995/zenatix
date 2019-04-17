@@ -1,0 +1,211 @@
+**dht_simulator.py*******
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~/prince/learning# python dht_simulator.py
+-h: for help
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~/prince/learning# python dht_simulator.py -h
+This script will publish humidity and temperature data from DHT simulator sensor
+Humidity and temperature can be simulated within given range, see options below:
+Usage: <-hum> <"min humidity"> <"max humidity"> <-temp> <"min temp."> <"max temp.">
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~/prince/learning# python dht_simulator.py -hum 60 70 -temp 40 30
+min. can't be greater than max. arguments. Exit.
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~/prince/learning# python dht_simulator.py -hum 60 70 -temp 40 ff
+All min. max. arguments must be integers. Exit.
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~/prince/learning# python dht_simulator.py -hum 60 70 -temp 40 50
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+Message Published...
+
+
+
+
+
+
+***alert_system.js******
+root@ubuntu-s-1vcpu-1gb-blr1-01:~/prince/learning# node alert_system.js
+subscribed to get sensor data
+subscribed to get sensor data
+subscribed to get sensor data
+Humidity: 66
+Temperature: 46
+Humidity: 61
+Temperature: 42
+Humidity: 62
+Temperature: 47
+Humidity: 68
+Temperature: 50
+Humidity: 65
+Temperature: 48
+avg humidity: = 64.4
+subscribed to get sensor data
+Humidity: 60
+Temperature: 43
+avg humidity: = 63.2
+Humidity: 66
+Temperature: 43
+avg humidity: = 64.2
+Humidity: 67
+Temperature: 42
+avg humidity: = 65.2
+Humidity: 60
+Temperature: 46
+avg humidity: = 63.6
+Humidity: 70
+Temperature: 41
+avg humidity: = 64.6
+Humidity: 62
+Temperature: 41
+avg humidity: = 65
+Humidity: 66
+Temperature: 40
+avg humidity: = 65
+Humidity: 64
+Temperature: 47
+avg humidity: = 64.4
+Humidity: 85
+Temperature: 49
+avg humidity: = 69.4
+Humidity: 80
+Temperature: 45
+avg humidity: = 71.4
+Humidity: 82
+Temperature: 48
+avg humidity: = 75.4
+Humidity: 80
+Temperature: 45
+avg humidity: = 78.2
+Humidity: 82
+Temperature: 47
+avg humidity: = 81.8
+exceeding
+Humidity: 84
+Temperature: 50
+Email sent: 250 2.0.0 OK  1555513124 c81sm54185853pfb.158 - gsmtp
+Humidity: 85
+Temperature: 45
+Humidity: 84
+Temperature: 46
+Humidity: 85
+Temperature: 45
+Humidity: 83
+Temperature: 41
+avg humidity: = 84.2
+Humidity: 81
+Temperature: 41
+avg humidity: = 83.6
+Humidity: 85
+Temperature: 48
+avg humidity: = 83.6
+Humidity: 80
+Temperature: 41
+avg humidity: = 82.8
+Humidity: 81
+Temperature: 44
+avg humidity: = 82
+Humidity: 81
+Temperature: 42
+avg humidity: = 81.6
+Humidity: 81
+Temperature: 49
+avg humidity: = 81.6
+Humidity: 85
+Temperature: 41
+avg humidity: = 81.6
+Humidity: 81
+Temperature: 50
+avg humidity: = 81.8
+Humidity: 80
+Temperature: 47
+avg humidity: = 81.6
+Humidity: 67
+Temperature: 46
+avg humidity: = 78.8
+back to normal
+Humidity: 64
+Temperature: 43
+Email sent: 250 2.0.0 OK  1555513156 h65sm146472156pfd.108 - gsmtp
+Humidity: 61
+Temperature: 47
+Humidity: 67
+Temperature: 40
+Humidity: 66
+Temperature: 45
+Humidity: 66
+Temperature: 40
+avg humidity: = 64.8
+Humidity: 62
+Temperature: 44
+avg humidity: = 64.4
+Humidity: 60
+Temperature: 48
+avg humidity: = 64.2
+Humidity: 63
+Temperature: 41
+avg humidity: = 63.4
+Humidity: 62
+Temperature: 45
+avg humidity: = 62.6
+Humidity: 64
+Temperature: 47
+avg humidity: = 62.2
+Humidity: 64
+Temperature: 45
+avg humidity: = 62.6
+Humidity: 60
+Temperature: 41
+avg humidity: = 62.6
+Humidity: 60
+Temperature: 47
+avg humidity: = 62
+Humidity: 66
+Temperature: 40
+avg humidity: = 62.8
+Humidity: 68
+Temperature: 50
+avg humidity: = 63.6
+
