@@ -75,4 +75,4 @@ while True:
     DHT_sensor_data = {"humidity": hum, "temperature": temp}
     MQTT_MSG = json.dumps(DHT_sensor_data);
     mqtt_client.publish(MQTT_TOPIC,MQTT_MSG)#publish
-    time.sleep(2)# sleep for 60 seconds before publishing next reading
+    time.sleep(60)# sleep for 60 seconds before publishing next reading
