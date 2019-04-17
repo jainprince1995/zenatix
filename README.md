@@ -16,6 +16,7 @@ This Script is a publisher, which publish the simulated dht sensor data to the M
 
 ##############################################################################
 alert_sysytem.js
+
 Description:
 Now the subscriber will send the mail if the average humidity exceeds the threshold value for more than 5 minutes and send mail if humidity come back to normal. Average humidity need to be remained normal for 5 minutes in order to send mail.
 
