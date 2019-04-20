@@ -82,10 +82,10 @@ function SEND_EMAIL() {
 
 
 var settings = {
-    keepalive: 1,
-    reconnectPeriod: 100 * 1
+    keepalive: 10,
+    reconnectPeriod: 1
 }
-var client  = mqtt.connect('mqtt://test.mosquitto.org', settings)
+var client  = mqtt.connect('mqtt://broker.hivemq.com', settings)
 
 var email_counter = 0;
 var current_cond = HUMID_NORM; 
@@ -102,6 +102,7 @@ client.on('connect', function () {
  
 client.on('message', function (topic, message) {
   if (topic == "sensor_data") {
+      console.log(message);
       try {
           var json_message = JSON.parse(message)
           console.log("Humidity: "+json_message.humidity)

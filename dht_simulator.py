@@ -26,7 +26,7 @@ elif sys.argv[1] != "-hum" or sys.argv[4] != "-temp":
 elif not is_intstring(sys.argv[2])\
      or not is_intstring(sys.argv[3])\
      or not is_intstring(sys.argv[5])\
-      or not is_intstring(sys.argv[6]):
+     or not is_intstring(sys.argv[6]):
         sys.exit("All min. max. arguments must be integers. Exit.")
 else:
     min_hum = int(sys.argv[2])
@@ -34,6 +34,8 @@ else:
     min_temp = int(sys.argv[5])
     max_temp = int(sys.argv[6])
     
+if min_hum > max_hum or min_temp > max_temp:
+    sys.exit("min. can't be greater than max. arguments. Exit.")
 
 MQTT_HOST = "test.mosquitto.org"
 MQTT_PORT = 1883
@@ -75,4 +77,4 @@ while True:
     DHT_sensor_data = {"humidity": hum, "temperature": temp}
     MQTT_MSG = json.dumps(DHT_sensor_data);
     mqtt_client.publish(MQTT_TOPIC,MQTT_MSG)#publish
-    time.sleep(60)# sleep for 60 seconds before publishing next reading
+    time.sleep(2)# sleep for 60 seconds before publishing next reading
