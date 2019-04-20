@@ -82,8 +82,7 @@ function SEND_EMAIL() {
 
 
 var settings = {
-    keepalive: 10,
-    reconnectPeriod: 1
+    keepalive: 60,
 }
 var client  = mqtt.connect('mqtt://broker.hivemq.com', settings)
 

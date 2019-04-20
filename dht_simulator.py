@@ -37,7 +37,7 @@ else:
 if min_hum > max_hum or min_temp > max_temp:
     sys.exit("min. can't be greater than max. arguments. Exit.")
 
-MQTT_HOST = "test.mosquitto.org"
+MQTT_HOST = "broker.hivemq.com"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 45
 MQTT_TOPIC = "sensor_data"
@@ -77,4 +77,4 @@ while True:
     DHT_sensor_data = {"humidity": hum, "temperature": temp}
     MQTT_MSG = json.dumps(DHT_sensor_data);
     mqtt_client.publish(MQTT_TOPIC,MQTT_MSG)#publish
-    time.sleep(2)# sleep for 60 seconds before publishing next reading
+    time.sleep(1)# sleep for 60 seconds before publishing next reading
